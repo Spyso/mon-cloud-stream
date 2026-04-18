@@ -1,0 +1,22 @@
+[
+    {
+        "iconUrl": "https://upload.wikimedia.org/wikipedia/commons/2/2f/Korduene_Logo.png",
+        "fileHash": "sha256-ccafae1a9935ee816d9c7e73530c405fb7856874c6d05107d02c06279bbc628b",
+        "apiVersion": 1,
+        "repositoryUrl": "https://github.com/Spyso/mon-cloud-stream",
+        "fileSize": 5037,
+        "status": 1,
+        "language": "fr",
+        "authors": [
+            "Spyro"
+        ],
+        "tvTypes": [
+            "Movie"
+        ],
+        "version": 1,
+        "internalName": "ExampleProvider",
+        "description": "Mon extension personnelle",
+        "url": "https://raw.githubusercontent.com/Spyso/mon-cloud-stream/builds/ExampleProvider.cs3",
+        "name": "ExampleProvider"
+    }
+]
