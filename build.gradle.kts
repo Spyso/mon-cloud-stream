@@ -37,10 +37,9 @@ subprojects {
     apply(plugin = "com.lagradost.cloudstream3.gradle")
 
    cloudstream {
-        setRepo(System.getenv("GITHUB_REPOSITORY") ?: "Spyso/mon-cloud-stream")
-        repositoryName = "Flux Cloud Mon"
-        repositoryDescription = "Mon dépôt d'extensions personnel"
-    }
+    repositoryName = "Flux cloud Mon"
+    repositoryDescription = "Mon depot d'extensions personnel"
+}
 
     android {
         namespace = "com.example"
