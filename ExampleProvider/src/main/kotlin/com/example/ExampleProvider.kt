@@ -9,7 +9,6 @@ class VoirAnimeProvider : MainAPI() {
     override var name = "VoirAnime"
     override val hasMainPage = true
     override var lang = "fr"
-    override val hasSearch = true
     override val supportedTypes = setOf(TvType.Anime)
 
     override val mainPage = mainPageOf(
@@ -59,9 +58,10 @@ class VoirAnimeProvider : MainAPI() {
             }
         }
 
-        return newAnimeLoadResponse(title, url, TvType.Anime, episodes) {
+        return newAnimeLoadResponse(title, url, TvType.Anime) {
             this.posterUrl = poster
             this.plot = description
+            addEpisodes(DubStatus.Subbed, episodes)
         }
     }
 
