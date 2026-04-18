@@ -37,8 +37,9 @@ subprojects {
     apply(plugin = "com.lagradost.cloudstream3.gradle")
 
     cloudstream {
-        // when running through github workflow, GITHUB_REPOSITORY should contain current repository name
-        setRepo(System.getenv("GITHUB_REPOSITORY") ?: "user/repo")
+        setrepo(System.getenv("GITHUB_REPOSITORY") ?: "Spyso/mon-cloud-stream")
+        repositoryName = "Flux Cloud Mon"
+        repositoryDescription = "Mon dépôt d'extensions personnel"
     }
 
     android {
