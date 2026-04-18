@@ -35,11 +35,6 @@ subprojects {
     apply(plugin = "kotlin-android")
     apply(plugin = "com.lagradost.cloudstream3.gradle")
 
-    cloudstream {
-        repositoryName = "Flux cloud Mon"
-        repositoryDescription = "Mon depot d'extensions personnel"
-    }
-
     android {
         namespace = "com.example.${project.name.lowercase()}"
         defaultConfig {
