@@ -61,7 +61,7 @@ subprojects {
     dependencies {
         val cloudstream by configurations
         val implementation by configurations
-        cloudstream("com.github.recloudstream:cloudstream:master-636d2507f7-1")
+        cloudstream("com.github.recloudstream:cloudstream3:master-SNAPSHOT")
         implementation(kotlin("stdlib"))
         implementation("com.github.Blatzar:NiceHttp:0.4.11")
         implementation("org.jsoup:jsoup:1.18.3")
