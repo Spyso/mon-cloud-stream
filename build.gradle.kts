@@ -36,8 +36,8 @@ subprojects {
     apply(plugin = "kotlin-android")
     apply(plugin = "com.lagradost.cloudstream3.gradle")
 
-    cloudstream {
-        setrepo(System.getenv("GITHUB_REPOSITORY") ?: "Spyso/mon-cloud-stream")
+   cloudstream {
+        setRepo(System.getenv("GITHUB_REPOSITORY") ?: "Spyso/mon-cloud-stream")
         repositoryName = "Flux Cloud Mon"
         repositoryDescription = "Mon dépôt d'extensions personnel"
     }
