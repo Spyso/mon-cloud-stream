@@ -52,11 +52,13 @@ class VoirAnimeProvider : MainAPI() {
             doc.selectFirst("div.film-poster img, .cover img")?.attr("src")
         )
         val description = doc.selectFirst("div.description, .synopsis, div.overview p")?.text()
-        val episodes = doc.select("div.ep-item a, ul.episodes a, .episode-list a").mapNotNull { ep ->
-            val epHref = fixUrl(ep.attr("href"))
-            val epName = ep.text().trim()
-            Episode(data = epHref, name = epName)
+
+        val episodes = doc.select("div.ep-item a, ul.episodes a, .episode-list a").map { ep ->
+            newEpisode(ep.attr("href")) {
+                this.name = ep.text().trim()
+            }
         }
+
         return newAnimeLoadResponse(title, url, TvType.Anime, episodes) {
             this.posterUrl = poster
             this.plot = description
